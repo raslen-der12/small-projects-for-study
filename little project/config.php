@@ -1,1 +1,0 @@
-<?php $cnx=mysqli_connect("localhost","root","","newproject") or die("prob in connection"); ?>
