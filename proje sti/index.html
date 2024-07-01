@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tunisia</title>
+    <link rel="stylesheet" href="hni naaml.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome To Tunisia</h1>
+    </header>
+    <nav>
+      <table>
+        <tr>
+          <th><a href="nn.html">Presentation</a></th>
+          <th><a href="nn2.html">Culture</a></th>
+          <th><a href="nn3.html">Sport</a></th>
+          <th><a href="nn4.html">musées</a></th>
+        </tr>
+      </table>
+    </nav>
+    <h2>formulaire avec contrôle</h2>
+    <form
+      id="align"
+      name="f"
+      action="nn.html"
+      onSubmit=" return verif_f()"
+      method="post"
+    >
+      <legend>
+        <table>
+          <tr>
+            <td><p class="p">nom :</p></td>
+            <td><input type="text" name="nom" /></td>
+          </tr>
+          <tr>
+            <td><p class="p">Prénom :</p></td>
+            <td><input type="text" name="prénom" /></td>
+          </tr>
+          <tr>
+            <td><p class="p">Courriel :</p></td>
+            <td><input type="text" name="courriel" /></td>
+          </tr>
+          <tr>
+            <td><p class="p">Âge :</p></td>
+            <td><input type="text" name="age" /></td>
+          </tr>
+          <tr>
+            <td><p class="p">address :</p></td>
+            <td><input type="text" name="add" /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <input type="submit" value="Envoyer" /><input
+                type="reset"
+                value="Interrompre"
+              />
+            </td>
+          </tr>
+        </table>
+      </legend>
+    </form>
+
+    <script language="JavaScript">
+      function verif_f() {
+        if (document.f.nom.value == "") {
+          alert("Veuillez entrer votre nom!");
+          return false;
+        }
+        if (document.f.prénom.value == "") {
+          alert("Veuillez entrer votre prénom!");
+          return false;
+        }
+        if (document.f.courriel.value == "") {
+          alert("Veuillez entrer votre adresse électronique !");
+          return false;
+        }
+        if (document.f.courriel.value.indexOf("@") == -1) {
+          alert("Ce n'est pas une adresse électronique !");
+          return false;
+        }
+        var chkZ = 1;
+        for (i = 0; i < document.f.age.value.length; ++i)
+          if (
+            document.f.age.value.charAt(i) < "0" ||
+            document.f.age.value.charAt(i) > "9"
+          )
+            chkZ = -1;
+        if (chkZ == -1) {
+          alert("Cette information n'est pas un nombre!");
+          return false;
+        }
+        if (document.f.add.value == "") {
+          alert("Veuillez entrer votre adresse ");
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>

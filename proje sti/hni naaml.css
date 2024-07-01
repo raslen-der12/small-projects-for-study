@@ -1,0 +1,132 @@
+@media screen and (min-width:500px) {
+    body{
+        background-color: #a2cddb;
+        color: white;
+    }
+    header{
+        width: 100%;
+        text-align: center;
+        font-size: 25px;
+        font-family: Bahnschrift Condensed;
+        overflow: hidden;
+        display: block;
+       
+        
+    }
+    .display{
+        display: none;
+    }
+    
+    h1{
+        animation-name: intro;
+        animation-duration: 2s;
+        color: purple;
+        
+    }
+    @keyframes intro{
+        0%{
+           margin-top: -150px;
+        }
+    
+    }
+    *{margin: 0;
+        padding: 0;
+        box-sizing: border-box;}
+    nav{
+        width: 100%;
+        background-color: #e4c1de;
+        font-family: Bahnschrift Condensed;
+        font-size: 30px;
+        animation-name: intro2;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        height: 42px;
+        display: block;
+        overflow: hidden;
+        
+        
+    }
+    table{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+    
+    
+    th{
+        width: 150px;
+        
+        
+        
+    }
+    
+    
+    a{
+        color: #222831;
+        text-decoration: none;
+        height: fit-content;
+    }
+    
+    a:hover{
+        color: white;
+    
+    }
+    @keyframes intro2{
+        0%{
+            height: 0px;
+        }
+    }
+    #as1{
+        margin-top: 1%;
+        width: 100%;
+        background-image: url(back.mp4);
+        background-size: cover;
+        height: 900px;
+        background-position-y: center;
+       
+    }
+    
+    
+
+}
+
+
+.p{
+    font-weight: bold;
+    font-size: larger;
+    float: left;
+}
+input[type="text"] {
+    width: 100%;
+    height: 40px;
+    border-radius: 60px;
+}
+h2,
+#align{text-align:center;}
+.cadre{border: 1px solid purple;
+background-color: plum;
+}
+legend{
+    height: 365px;
+    width: 650px;
+    padding: 7px;
+    border-radius: 7px;
+    color: white;
+    background-color: plum;
+    border: 1px solid purple;
+}
+input[type="submit"],input[type="reset"]{
+    text-align: center;
+    width: 100px;
+    margin: 5px;
+    height: 30px;
+    border-radius: 40px
+}
+form{
+    width: 650px;
+   
+    margin: auto;
+
+}
+
