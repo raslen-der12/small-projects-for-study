@@ -1,0 +1,341 @@
+body{
+    background: rgb(19, 19, 19)  ;
+    padding: 0;
+    margin: 0;
+    background-image: url(back.jpg);
+    background-size:cover ;
+ }
+
+.h1{
+    color:#fff;
+    margin-bottom: 0;
+}
+
+.sec1{
+    backdrop-filter: blur(8px);
+    background-color: rgba(19, 19, 19, 0.747);
+    translate: 0% 50%;
+    margin: auto;
+    width: 40%;
+    padding: 1%;
+    border: 2px solid rgb(104, 104, 104);
+    border-radius: 9px;
+}
+
+.bb{
+    margin-bottom: 20px;
+    text-align: center;
+    display: block;
+    font-size: large;
+    width: 100%;
+    margin-inline: auto ;
+    text-decoration: none;
+
+}
+select,
+input[type= email],
+input[type= text]{
+    border-radius: 5px;
+    width: 100%;
+    border:solid  #a8a8a8;
+    
+}
+
+.but
+{
+    background-color: rgb(255, 123, 0);  
+    color: #fff;    
+    cursor: pointer;    
+    border: none;         
+    padding: 10px 16px;              
+    font-family: "Trebuchet MS", Arial, Helvetica   , sans-serif;                                                
+    font-weight: bold;                           
+    border-radius: 5px;              
+}   
+    
+select{ 
+    width:103%
+}
+.but{
+    width: 50%;
+}
+.tab1{
+    margin: auto;
+    width: 90%;
+}
+
+a{
+    text-decoration:  none;
+    font-weight: bolder;
+    color: rgb(255, 123, 0);
+    cursor: pointer;
+}
+label{
+    color: #fff
+}
+
+
+.h11{
+    color:red;
+    text-align: center;
+
+}
+.divc{
+    text-align: center;
+    position:absolute;
+    top:40%; 
+    left:32%;
+    right:32%;
+}
+
+.inn{
+    border: none;
+    background: transparent !important;
+    color: rgb(255, 123, 0) !important;
+ }
+
+ header{
+    width : 100%;
+    background: rgb(255, 123, 0);
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sec{
+    text-align: center;
+    margin: auto;
+    width: 40%;
+ }
+ .imm{
+    display: block !important;
+    margin: auto ;
+ }
+
+ .sect{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    justify-content: space-between;
+
+ }
+ .c1{
+    margin : 5px;
+    border: 1px solid white;
+    background:  url(america.jpg);
+    background-size: cover;
+    height:170px;
+    border-radius:5px;
+
+
+ }
+ .c2{
+    margin : 5px;
+    border: 1px solid white;
+    border-radius:5px; 
+    background:  url(tunisia.jpg);
+    background-size: cover;
+    height:170px;
+ }.c3{
+    margin : 5px;
+    border: 1px solid white;
+    background:  url(ak47.avif);
+    background-size: cover;
+    height:170px;
+
+    border-radius:5px; 
+
+ }.c4{
+    margin : 5px;
+    border: 1px solid white;
+    border-radius:5px; 
+    background: red;
+    background:  url(hitler.jpg);
+    background-size: cover;
+    height:170px;
+ }.c5{
+    margin : 5px;
+    border: 1px solid white;
+    border-radius:5px; 
+    background: red;
+    background:  url(kongfu.jpg);
+    background-size: cover;
+    height:170px;
+ }.c6{
+    margin : 5px;
+    border: 1px solid white;
+    border-radius:5px; 
+    background: red;
+    background:  url(ice.jpg);
+    background-size: cover;
+    height:170px;
+ }
+ p{
+    font-size: 18px;
+ }
+ .inp{
+    background:transparent ;
+    border: none;
+    width : 100%;
+    height: 170px;
+    font-size: 77px;
+    font-family: fantasy;
+    text-shadow: 9px -6px 3px black;
+ }
+ h2{
+    text-align:center;
+ }
+ .doo{
+    text-align:center;
+    margin-right:10px
+ }
+
+ .doc{
+    margin-top: -18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+ }
+.tab1{
+border-bottom: solid 1px #85858530;
+border-top: solid 1px #85858530;
+text-align: left;
+width: 94%;
+margin: 40px 0 0;
+padding: 10px;
+}
+.hh1{
+margin:0;
+color:#ffffff8a;
+
+}
+
+.gohome{
+background: linear-gradient(  to bottom, #6e6e6ec2 ,#00000000);
+width: 94%;
+margin:0;
+height: 150px;
+
+}
+.hh11{
+margin: 30px 30px 30px -12px;
+color: #ffffff4d;
+width: 97%;
+padding: 137px 0;
+border: dashed #8787876b;
+border-radius: 30px;
+}
+.ever{
+margin:5px
+}
+footer{
+bottom: 0;
+width: 100%;
+background-color: rgba(0, 0, 0, 0.893);
+text-align: center;
+height: 50px;
+font-size: 18px;
+padding : 20px;
+
+}
+
+article{
+    backdrop-filter: blur(8px);
+
+    padding: 25px;
+margin: 50px;
+border: 2px solid white;
+border-radius: 10px;
+box-shadow: 0 0 20px 7px rgb(165 165 165 / 60%);
+font-family: Arial, sans-serif;
+color: white;
+line-height: 1.5em;
+animation: appear .5s ease-in-out forwards;
+  }
+   @keyframes appear {
+       from {opacity: 0;}
+   }
+ .h1b{
+ font-size: 3em;
+ margin: .67em;
+ font-weight: bold
+ }
+
+ .doo{
+     text-align:center;
+     margin-right:10px
+  }
+
+  .doc{
+     margin-top: -18px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+  }
+  .tab{
+     border-bottom: solid 1px #85858530;
+border-top: solid 1px #85858530;
+text-align: left;
+width: 94%;
+margin: 40px 0;
+padding: 10px;
+  }
+
+  
+  .h2{
+    font-size: 24pt;
+font-family: monospace;
+  }
+  .griyed{
+    display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(490px, 1fr));
+     gap: 10px;
+     align-items: start;
+
+}
+.for{
+margin :auto;
+ width: 60% !important;
+
+}
+.td{
+width: 50%;
+}
+
+.table,
+.selec,
+.inpu{
+padding: 4px;
+border-radius: 4px;
+width: 100%;
+}
+
+
+.sec12{
+    position:relative;
+    border-radius: 10px;
+    margin:auto;
+    width:22%;
+    height: 520px;
+    background-image: url(proo.jpg);
+    background-size:cover;
+    background-position:center;
+}
+.h33{
+    text-transform: uppercase;
+    font-family: sans-serif;
+    position: absolute;
+    top: 31%;
+    left: 23%;
+    right: 23%;
+}
+.ident{
+    position: absolute;
+    top: 41%;
+    left: 15%;
+    right: 15%;
+}
