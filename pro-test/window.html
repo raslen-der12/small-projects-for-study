@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem </title>
+
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=poppins:wght;200;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.gstatic.com">
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <h2><a href="#" class="logo a">nouvil</a></h2> 
+          <div class="nav-links">
+             <ul>
+                <li><a href="test.html">HOME1</a></li>
+                <li><a href="index.html" >HOME2</a></li>
+                <li ><a class="active" href="window.html" >HOME3</a></li>
+             </ul>
+          </div>
+      </nav>
+        <div class="text">
+            <h1>Lorem ipsum dolor sit. </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis necessitatibus fuga pariatur esse error sequi temporibus.</p>
+            <a href=""class ="hero">Lorem ipsum dolor</a>
+        </div>
+
+    </section>
+
+
+    <section class="cours">
+        <h1>Lorem, ipsum.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="row">
+            <div class="cour-col">
+                <h3>Lorem</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sequi esse odit quibusdam dolore repudiandae ratione. Reiciendis repellat alias architecto modi labore veritatis, voluptate tempora odit quo exercitationem adipisci quidem!</p>
+
+            </div>
+            <div class="cour-col">
+                <h3>Lorem</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sequi esse odit quibusdam dolore repudiandae ratione. Reiciendis repellat alias architecto modi labore veritatis, voluptate tempora odit quo exercitationem adipisci quidem!</p>
+                
+            </div>
+            <div class="cour-col">
+                <h3>Lore</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sequi esse odit quibusdam dolore repudiandae ratione. Reiciendis repellat alias architecto modi labore veritatis, voluptate tempora odit quo exercitationem adipisci quidem!</p>
+                
+            </div>
+            <div class="cour-col">
+                <h3>Lorem</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sequi esse odit quibusdam dolore repudiandae ratione. Reiciendis repellat alias architecto modi labore veritatis, voluptate tempora odit quo exercitationem adipisci quidem!</p>
+                
+            </div>
+        </div>
+    </section>
+    <section class="campus">
+        <h1>Lorem ipsum dolor</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="row">
+            <div class="cumpus-col">
+                <img class="img" src="ankara.png" height="500">
+                <div class="layer">
+                    <img class="h3 play" src="icon.png" height="60"  onclick="playVideo('trai.mp4')">
+                </div>
+            </div>
+            <div class="cumpus-col">
+                <img class="img" src="antalya.png" height="500" >
+                <div class="layer">
+                    <img class="h3 play" src="icon.png" height="60"  onclick="playVideo('trai.mp4')">                </div>
+            </div>
+            <div class="cumpus-col">
+                <img class="img" src="istaboul.png" height="500">
+                <div class="layer">
+                    <img class="h3 play" src="icon.png" height="60"  onclick="playVideo('trai.mp4')">                </div>
+            </div>
+            <div class="cumpus-col">
+                <img class="img" src="Izmir.png" height="500">
+                <div class="layer">
+                    <img class="h3 play" src="icon.png" height="60"  onclick="playVideo('trai.mp4')">                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="sou">
+        <div class="vid" id="videoPlayer">
+          <video  width="100%"controls autoplay id="myVideo">
+            <source src="trai.mp4" type="video/mp4">
+          </video>
+          <img src="delete.png" class="clos" onclick="stop()">
+        </div> 
+        </div>
+
+        <script>
+            let videoPlayer = document.getElementById("videoPlayer")
+            let myVideo = document.getElementById("myVideo")
+            let foot = document.getElementById("foot")
+            let follow = document.querySelector('.follow')
+            function stop() {
+      
+              videoPlayer.style.display = "none";
+            }
+            function playVideo(file){
+              myVideo.src = file;
+              videoPlayer.style.display = "block";
+              foot.style.display = 'fixed';
+              follow.classList.remove("follow");
+      
+            }
+      
+        </script>
+</body>
+</html>

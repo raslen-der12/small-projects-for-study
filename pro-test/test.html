@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=poppins:wght;200;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>learn</title>
+</head>
+
+<body>
+    <header class="ads">
+
+        <h2><a href="#" class="logo a">Liberte  Tours</a></h2>
+        <div class="adst">
+            <ul>
+                <li><a href="test.html" class="active">menu</a></li>
+                <li><a href="index.html">HOME2</a></li>
+                <li><a href="window.html">HOME3</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <h2 id="text">TRAVEL CHEAP NOW</h2>
+        <img src="bird1.png" id="bird1">
+        <img src="bird2.png" id="bird2">
+        <img src="forest.png" id="forest">
+        <a href="#" id="btn">Explore</a>
+        <img src="rocks.png" id="rocks">
+        <img src="water.png" id="water">
+
+
+    </section>
+    <section class="sec">
+        <h4 class="stat-title">nos plans</h4>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="tl-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <p class="tl-duration">2022 - present</p>
+                <h5>economie<span> - 1,199 TND</span></h5>
+                <p>
+                    facilite de paiment sur 4 fois vol + transferts(+guide tourestique) + excursions
+                </p>
+            </div>
+            <div class="timeline-item">
+                <div class="tl-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <p class="tl-duration">2022 - present</p>
+                <h5>VIP PRINCE<span> - 2,199 TND </span></h5>
+                <p>
+                    vol + hotel (5 etoiles) + transferts luxe (+guide tourestique)+ excursions luxe
+                </p>
+            </div>
+            <div class="timeline-item">
+                <div class="tl-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <p class="tl-duration">2022 - present</p>
+                <h5>econmie premium<span> - 1,599 TND </span></h5>
+
+                <p>
+                    facilite de paiment sur 4 fois vol + Hotel(4 etoiles) + transferts(+guide tourestique) + excursions
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="tl-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <p class="tl-duration">2022 - present</p>
+                <h5>VIP QUEEN<span> - 2,499 TND</span></h5>
+
+                <p>
+                    vol+ transferts luxe + excursions luxe(+guide tourestique) + hotel(5 etoiles + 3 etoiles michilin)
+                </p>
+            </div>
+            <div class="timeline-item">
+                <div class="tl-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <p class="tl-duration">2022 - present</p>
+                <h5>business class <span> - 1,875 TND  </span></h5>
+                <p>
+                    vol + transferts(+guide tourestique) + Hotel(4.5 etoiles) + excursions
+                </p>
+            </div>
+            <div class="timeline-item">
+                <div class="tl-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <p class="tl-duration">2022 - present</p>
+                <h5>VIP KING- <span> - 3,000 TND</span></h5>
+                <p>
+                    vol+ transferts luxe privé + excursions luxe (+guide tourestique) + une villa (+chef privé)
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script>
+        let text = document.getElementById('text');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let btn = document.getElementById('btn');
+        let rocks = document.getElementById('rocks');
+        let forest = document.getElementById('forest');
+        let water = document.getElementById('water');
+        let header = document.getElementById('header');
+
+
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+
+            text.style.top = 20 + value * -0.2 + '%';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.left = value * 2 + 'px';
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left = value * -5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocks.style.top = value * -0.12 + 'px';
+            forest.style.top = value * 0.25 + 'px';
+            header.style.top = value * 0.5 + 'px';
+
+        })
+    </script>
+
+</body>
+
+</html>
