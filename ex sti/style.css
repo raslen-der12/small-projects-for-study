@@ -1,0 +1,56 @@
+header{
+    background-color: silver;
+}
+
+
+img{
+    background-color: silver;
+
+    border-radius: 50%;
+    float: left;
+    padding: 10px;
+}
+
+
+h2{
+    text-align: center;
+}
+
+
+nav{
+    background-color: rgb(210, 164, 221);
+    width: 10%;
+    float: left;
+    height: 400px;
+}
+
+
+section{
+    background-color: cadetblue;
+    width: 70%;
+    float: left;
+    height: 400px;
+
+}
+
+article{
+    padding: 10px;
+    margin: 10px;
+    background-color: midnightblue;
+    border: 3px silver solid;
+}
+
+aside{
+    width: 20%;
+    background-color: rgb(4, 255, 117);
+    float: right;
+    height: 400px;
+
+}
+
+footer{
+    clear: both;
+    background-color: rgb(29, 99, 59);
+}
+
+
