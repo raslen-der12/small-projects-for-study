@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="test.js"></script>
+ 
+</head>
+
+<body onload="test6()">
+<h2> Contactez nous </h2>
+<hr> 
+<h3 id="dd" style="text-align: right; text-transform: capitalize;"></h3>
+<fieldset> 
+    <legend> Envoyer un message </legend>
+<form action="" method="post">
+    <input name="fn" type="text" id="fn" placeholder="Full Name"> <br>
+    <input name="ps" type="text" id="ps" placeholder="Your pseudo" 
+    onblur="test1()" onfocus="test2()">
+    <span id="e1"> </span> <br>
+    <input name="age" type="number" id="age" placeholder="your age" onmouseover="test3()"> <br>
+    <textarea name="msg" id="msg" cols="30" rows="10" 
+    placeholder="Ecrire votre message ici "onblur="test4()">
+  </textarea><br>
+    <span id="e2"> </span> <br>
+    <input id="valider" type="button" value="Envoyer un message" onclick="test5()">   
+    <input id="annule" type="reset" value="Annuler"> 
+</form>
+</fieldset>  
+</body>
+</html>

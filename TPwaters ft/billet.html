@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Billet</title>
+  <script src="test.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2> Billet Concert Rogers Waters </h2>
+    <hr>
+
+
+
+    <form action="test.php" method="POST" onsubmit="return valide()">
+      <fieldset>
+      <legend> Acheter un Billet </legend>
+
+      <table>
+        <tr>
+          <td class="choix">
+            <label for="mail"> Email  Fan </label>
+            <input name="mail" type="email" id="mail">
+            <!--label for="mail"> Email  Fan </label>
+            <input name="mail" type="email" id="mail"-->
+          </td>
+          <td class="choix">
+            <label for="lieu">Choisir Lieu </label>
+            <select name="lieu" id="lieu" onblur="places()">
+              <option value="">Choisir un concert</option>
+              <option value="1"> Multifunctional Sports Hall, Budapest </option>
+              <option value="2"> Accor Arena, Paris</option>
+              <option value="3"> Hallenstadion, Zurich</option>
+              <option value="4"> Unipol Arena, Bologna</option>
+              <option value="5"> Palais des Sports, Anvers </option>
+              <option value="6"> 	Lanxess Arena, Cologne</option>
+              <option value="7"> Mercedes Benz Arena, Berlin</option>
+            </select>
+            <!--datalist>
+            <input list="lieux" id="lieu">
+            <datalist  id="lieux">
+              <option value="Choisir un concert">
+              <option value="Paris, France     4 nov">
+              <option value="Lille, France    12 nov">
+              <option value="Nice, France     14 nov">
+              </datalist-->
+          </td>
+        </tr>
+      
+        <tr>
+         
+          <td class="choix"> <br> 
+            <label>Choisir Place </label> <br>
+              <input type="radio" value="sol" name="place" id="sol">Sol
+              <input type="radio" value="tribune" name="place" id="tribune">tribune
+              <input type="radio" value="loge" name="place" id="loge">Loge
+              <!-- checkbox>
+<label>Choisir Place </label> <br>
+<input type="checkbox" value="sol" name="place1" id="sol">Sol
+<input type="checkbox" value="tribune" name="place2" id="tribune">tribune
+<input type="checkbox" value="loge" name="place3" id="loge">Loge -->
+            </td>
+          <td class="choix"> <br>
+            <label>Quantité  </label> <br>
+            <input name="qt" type="number" id="qt"> <br>
+            <span id="tt"></span>
+       </td>
+        </tr>
+          <tr>
+         <td class="but"><input id="valider" type="submit" value="Valider"> 
+          <input id="tarif" type="button" value="Tarif" onclick="total()"> </td>
+          <td class="but"> <input id="annule" type="reset" value="Annuler"> 
+       
+          </td>
+        </tr>
+      </table>
+  </fieldset>  
+</form>
+
+
+</body>
+</html>
