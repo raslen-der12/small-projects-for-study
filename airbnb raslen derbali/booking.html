@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booking</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="Controles.js"></script>
+</head>
+<body>
+    <h1>
+            formulaire reservation       
+    </h1>
+    <div class="lin"></div>
+    <fieldset>
+        <legend>reserver un appartement</legend>
+        <form action="booking.php" method="post" onsubmit=" return verif()">
+            <table>
+                <tr>
+                    <td>
+                        <label>numero locataire</label>
+                        <input type="text" name="numloc" id="numloc">
+                    </td>
+                    <td>
+                        <label>numero appartement</label>
+                        <input type="text" name="numapp" id="numapp">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>date check in</label>
+                        <input type="date" name="datcheck" id="datcheck">
+                    </td>
+                    <td>
+                        <label>duree</label><br>
+                        <input type="text" name="duree" id="duree">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="chbox" id="chbox"><label> confirme your booking</label></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" class="bt" value="reserve"></td>
+                    <td><input type="reset"class="bt" value="annuler"></td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+</body>
+</html>
