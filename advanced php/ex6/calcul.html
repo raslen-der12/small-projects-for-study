@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="resultat.php" method="get">
+        <p>Avec liste deroulante</p>
+        <input type="number" name="a">
+        <select name="operateur">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="number" name="b">
+        <br> <br> <br>
+        <input type="submit" value="valider">
+        <input type="reset" value="vider">
+
+    </form>
+    <hr>
+    <form action="resultat.php" method="get">
+        <p>Avec des radios Boutons</p>
+        <input type="number" name="a">
+        <table style="display: inline;">
+        <tr><td><input type="radio" name="operateur" value="+">+</td></tr>
+        <tr><td><input type="radio" name="operateur" value="-">-</td></tr>
+        <tr><td><input type="radio" name="operateur" value="*">*</td></tr>
+        <tr><td><input type="radio" name="operateur" value="/">/</td></tr>
+        </table>
+        <input type="number" name="b">
+        <br> <br> <br>
+        <input type="submit" value="valider">
+        <input type="reset" value="vider">
+    </form>
+</body>
+</html>
