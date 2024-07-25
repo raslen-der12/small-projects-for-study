@@ -1,0 +1,13 @@
+.form-control {
+    border: 1px solid #9da0a3 ;
+    background: none
+
+}
+.card{
+    border: 1px solid #9da0a3 ;
+    background-color: transparent  ;
+}
+header{
+    background-color: var(--gray-dark) ;
+    margin-bottom: 100px ;
+};
