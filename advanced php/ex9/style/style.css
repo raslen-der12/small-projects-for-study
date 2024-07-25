@@ -1,0 +1,81 @@
+body{
+    /* darktheme */
+    background-color: #1f1f1f;
+
+}
+
+
+
+label{
+    display: block;
+    margin:5px;
+}
+.div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.div6{
+    grid-area: div6;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+input[type="submit"],input[type="reset"]{
+    color: white;
+    margin: 5px;
+    border-radius: 6px;
+    border: none;
+    height:40px;
+
+}
+input[type="submit"]{
+    background-color: blue;
+}
+input[type="reset"]{
+    background-color: red;
+}
+fieldset{
+    width: max-content;
+    border: 1px solid darkgreen;
+    border-radius: 5px;
+    margin : auto;
+}
+input[type="radio"]{
+    width: 20%;
+    margin: 11px -25px 0 13px;
+}
+input[type="text"],input[type="password"],input[type="date"],select{
+    width: 350px;
+    margin:5px;
+    background:none;
+    border: 1px solid darkgreen;
+    border-radius: 5px;
+    height:30px;
+}
+.d{
+    display: grid;
+    grid-template-columns: 1fr;
+} 
+.dd{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.adr{
+    width: -webkit-fill-available !important;
+}
+.red{
+    color: red;
+
+}
+.darkgreen{
+    color: darkgreen;
+}
+.bestblue{
+    color: rgb(57, 96, 226);
+}
+
+.sp{
+    margin-right: 250px ;
+}
